@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 0;
+  padding: 0 0 9/16*100%; //16 x 9
+  position: relative;
+  background: #000;
+  color: white;
+  display: table;
+  
+  .player {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(9/16*100vw);
+  background: #000;
+  color: white;
+  img {
+    max-width: 100%;
+    max-height: -webkit-fill-available;
+  }
+}
